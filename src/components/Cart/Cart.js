@@ -5,10 +5,13 @@ import { useSelector } from 'react-redux';
 
 const Cart = (props) => {
 
+
   const CartItems =  useSelector ((state) => state.cart.items);
+  const totalAmount = useSelector((state) => state.cart.totalAmount);
   return (
     <Card className={classes.cart}>
       <h2>Your Shopping Cart</h2>
+      <p>Total Amount: ₹{totalAmount}</p>
       <ul>
         {CartItems.map((item) => (
           <CartItem
