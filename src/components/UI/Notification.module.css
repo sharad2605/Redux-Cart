@@ -16,9 +16,9 @@
   }
   
   .error {
-    background-color: #690000;
+    background-color: #690000  !important;
   }
   
   .success {
-    background-color: #5e0fef;
+    background-color: #1de60a  !important;
   }
